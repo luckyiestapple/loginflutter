@@ -9,16 +9,23 @@ class AppStrings {
   bool get _en => code == 'en';
 
   // ── LOGIN ────────────────────────────────────────────────────────────
-  String get loginSubtitle => _en ? 'Sign in to continue' : 'Masuk untuk melanjutkan';
+  String get loginSubtitle =>
+      _en ? 'Sign in to continue' : 'Masuk untuk melanjutkan';
   String get passwordHint => _en ? 'Password' : 'Kata Sandi';
   String get loginButton => _en ? 'Sign In' : 'Masuk';
   String get forgotPassword => _en ? 'Forgot password?' : 'Lupa kata sandi?';
-  String get loginSuccess => _en ? 'Login successful! Welcome.' : 'Login Berhasil! Selamat datang.';
-  String get loginFailed => _en ? 'Incorrect email or password!' : 'Email atau Password Salah!';
-  String get emailEmpty => _en ? 'Email cannot be empty' : 'Email tidak boleh kosong';
-  String get emailInvalid => _en ? 'Invalid email format' : 'Format email tidak valid';
-  String get passwordEmpty => _en ? 'Password cannot be empty' : 'Kata sandi tidak boleh kosong';
-  String get passwordShort => _en ? 'Password min. 6 characters' : 'Kata sandi minimal 6 karakter';
+  String get loginSuccess =>
+      _en ? 'Login successful! Welcome.' : 'Login Berhasil! Selamat datang.';
+  String get loginFailed =>
+      _en ? 'Incorrect email or password!' : 'Email atau Password Salah!';
+  String get emailEmpty =>
+      _en ? 'Email cannot be empty' : 'Email tidak boleh kosong';
+  String get emailInvalid =>
+      _en ? 'Invalid email format' : 'Format email tidak valid';
+  String get passwordEmpty =>
+      _en ? 'Password cannot be empty' : 'Kata sandi tidak boleh kosong';
+  String get passwordShort =>
+      _en ? 'Password min. 6 characters' : 'Kata sandi minimal 6 karakter';
 
   // ── SALAM & TANGGAL ──────────────────────────────────────────────────
   String getSalam(int hour) {
@@ -36,12 +43,54 @@ class AppStrings {
 
   String formatDate(DateTime dt) {
     if (_en) {
-      const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      const days = [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ];
+      const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+      ];
       return '${days[dt.weekday - 1]}, ${months[dt.month - 1]} ${dt.day}, ${dt.year}';
     }
-    const hari = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
-    const bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+    const hari = [
+      'Senin',
+      'Selasa',
+      'Rabu',
+      'Kamis',
+      'Jumat',
+      'Sabtu',
+      'Minggu',
+    ];
+    const bulan = [
+      'Januari',
+      'Februari',
+      'Maret',
+      'April',
+      'Mei',
+      'Juni',
+      'Juli',
+      'Agustus',
+      'September',
+      'Oktober',
+      'November',
+      'Desember',
+    ];
     return '${hari[dt.weekday - 1]}, ${dt.day} ${bulan[dt.month - 1]} ${dt.year}';
   }
 
@@ -50,8 +99,8 @@ class AppStrings {
   String get running => _en ? 'Running' : 'Berjalan';
   String get stopped => _en ? 'Stopped' : 'Berhenti';
   String get pause => _en ? 'Pause' : 'Jeda';
-  String get resume => _en ? 'Continue' : 'Lanjut';
-  String get reset => 'Reset';
+  String get resume => _en ? 'Start' : 'Mulai';
+  String get reset => _en ? 'Reset' : 'Atur Ulang';
   String secondsDesc(int s) => _en
       ? '$s seconds elapsed since page opened'
       : '$s detik berjalan sejak halaman ini dibuka';
@@ -159,7 +208,8 @@ class AppStrings {
   String get builtWithLabel => _en ? 'Built with' : 'Dibuat dengan';
   String get contactLabel => _en ? 'Clinic Contact' : 'Kontak Klinik';
   String get addressLabel => _en ? 'Address' : 'Alamat';
-  String get licenseBtn => _en ? 'License & about the app' : 'Lisensi & tentang aplikasi';
+  String get licenseBtn =>
+      _en ? 'License & about the app' : 'Lisensi & tentang aplikasi';
   String get aboutDesc => _en
       ? 'A clinic management app for Klinik Utama Medisy patients. Simplifies registration, consultation, and health monitoring.'
       : 'Aplikasi manajemen klinik untuk pasien Klinik Utama Medisy. Memudahkan pendaftaran, konsultasi, dan pemantauan kesehatan Anda.';

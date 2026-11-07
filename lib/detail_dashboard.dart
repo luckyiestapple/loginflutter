@@ -632,7 +632,7 @@ class InformasiPage extends StatelessWidget {
                       _InfoTile(
                         icon: Icons.tag,
                         label: strings.versionLabel,
-                        value: '1.0.0',
+                        value: '1.2.0',
                         showDivider: true,
                       ),
                       _InfoTile(
@@ -650,7 +650,7 @@ class InformasiPage extends StatelessWidget {
                       _InfoTile(
                         icon: Icons.location_on_outlined,
                         label: strings.addressLabel,
-                        value: 'Jl. Medisy Raya No.1, Jakarta',
+                        value: 'Jl. Tunas Raya No.1, Jakarta',
                         showDivider: false,
                       ),
                       const SizedBox(height: 20),

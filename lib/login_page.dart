@@ -116,7 +116,7 @@ class _LoginPageState extends State<LoginPage>
         children: [
           // ── Layer 1: Background Foto Gedung ──────────────────────────
           Image.asset(
-            'assets/images/background.jpg',
+            'assets/images/background2.jpeg',
             fit: BoxFit.cover,
             errorBuilder: (context, error, stackTrace) => Container(
               decoration: const BoxDecoration(
@@ -182,7 +182,7 @@ class _LoginPageState extends State<LoginPage>
                             children: [
                               // ── Logo Medisy ──────────────────────────
                               Image.asset(
-                                'assets/images/logo.png',
+                                'assets/images/logo.jpeg',
                                 height: 60,
                                 errorBuilder: (context, error, stackTrace) =>
                                     Row(
